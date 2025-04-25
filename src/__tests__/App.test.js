@@ -57,7 +57,7 @@ test("displays an image of myself with alt text", () => {
   test("displays a link to my LinkedIn profile", () => {
     render(<App />);
   
-    const linkedinLink = screen.getByRole("link", { name: /linkedin/i });
+    const linkedinLink =screen.getByRole("link", { name: /linkedin/i });
   
     expect(linkedinLink).toBeInTheDocument();
     expect(linkedinLink).toHaveAttribute("href", "https://www.linkedin.com/feed/"); 
